@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--The farthest shadow layer from the button-->
+    <item android:top="5px" android:bottom="5px" android:left="5px" android:right="5px">
+        <shape>
+            <solid android:color="@color/shadow1"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:top="6px" android:bottom="6px" android:left="6px" android:right="6px">
+        <shape>
+            <solid android:color="@color/shadow3"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!--The closest shadow layer to the button-->
+    <item android:top="7px" android:bottom="7px" android:left="7px" android:right="7px">
+        <shape>
+            <solid android:color="@color/shadow5"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</layer-list>

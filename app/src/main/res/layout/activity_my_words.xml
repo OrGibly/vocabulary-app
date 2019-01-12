@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPurple"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/navigation_bar_background"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_navigation"
+            android:onClick="startAddWordActivityM"
+            android:text="New Word"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/darkPurple1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/btnMyWords2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/darkPurple2"
+            android:onClick="startQuizActivityM"
+            android:text="My Words"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/darkPurple1"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/btnQuiz2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_navigation"
+            android:gravity="center"
+            android:onClick="startQuizActivityM"
+            android:text="Quiz"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Word"
+                android:textColor="@color/darkPurple1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSetVisible"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_visibility_visible_2"
+                android:onClick="setAllItemsVisibility" />
+
+            <Button
+                android:id="@+id/buttonSetInvisible"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_visibility_invisible_2"
+                android:onClick="setAllItemsVisibility" />
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Translation"
+                android:textColor="@color/darkPurple1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewMyWords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/frame_6"
+            android:entries="@drawable/frame_1"
+            android:padding="2dp"
+            tools:listitem="@layout/item_word" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@drawable/shadow_unpressed"/>
+            <item android:top="8px" android:bottom="8px" android:left="8px" android:right="8px">
+                <shape>
+                    <solid android:color="@color/purple"/>
+                    <corners android:radius="3dp"/>
+                </shape>
+            </item>
+            <item android:top="9px" android:bottom="9px" android:left="9px" android:right="9px">
+                <shape>
+                    <solid android:color="@color/lightPurple"/>
+                    <stroke android:color="@color/lightPurple5" android:width="1px"/>
+                    <corners android:radius="3dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/shadow_pressed"/>
+            <item android:top="8px" android:bottom="8px" android:left="8px" android:right="8px">
+                <shape>
+                    <solid android:color="@color/lightPurple2"/>
+                    <stroke android:color="@color/darkPurple1" android:width="1px"/>
+                    <corners android:radius="3dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

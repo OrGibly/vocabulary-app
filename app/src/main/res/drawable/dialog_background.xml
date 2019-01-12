@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--for this background, padding should be: "???px" (5+2+2)
+    and dialog window background should be transparent-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shadow_dialog"/>
+    <item android:top="5px" android:bottom="5px" android:left="5px" android:right="5px">
+        <shape>
+            <solid android:color="@color/darkPurple2"/>
+            <stroke android:color="@android:color/black" android:width="2dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Vocabulary</string>
+    <string name="quiz_finished_msg">Quiz has finished.</string>
+</resources>
