@@ -56,7 +56,8 @@ public class MyQuizStrategy implements QuizStrategy{
 
     //Make an array of words for quiz, taken randomly from wordsWithRepetitions.
     //Each word appears once in the returned array, with no repetitions.
-    //Reason: a word that appears more times in the given array
+    //Reason: a word that appears more times in the given array(wordsWithRepetitions)
+    // will appear statistically more times in the returned array.
     private ArrayList<Word> makeWordsForQuiz(ArrayList<Word> wordsWithRepetitions, int quizSize) {
         ArrayList<Word> wordsForQuiz = new ArrayList<>(quizSize);
         Random random = new Random();
